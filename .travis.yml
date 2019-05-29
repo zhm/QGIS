@@ -169,4 +169,4 @@ before_script:
   - ./.ci/travis/${TRAVIS_CONFIG}/before_script.sh
 
 script:
-  - ./.ci/travis/${TRAVIS_CONFIG}/script.sh
+  - travis_wait 150 ./.ci/travis/${TRAVIS_CONFIG}/script.sh
